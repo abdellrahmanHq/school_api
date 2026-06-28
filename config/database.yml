@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: school_api_development
+  pool: 5
+  username: postgres
+  password: 
+  host: 127.0.0.1
+  port: 5432
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: school_api_test
+  pool: 5
+  username: postgres
+  password: 
+  host: 127.0.0.1
+  port: 5432
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: school_api_production
+  pool: 5
+  username: postgres
+  password: <%= ENV["SCHOOL_API_DATABASE_PASSWORD"] %>
